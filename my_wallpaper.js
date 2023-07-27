@@ -17,7 +17,7 @@
   let Lily8y = 115
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -43,14 +43,14 @@ stroke (99,138,99)
 strokeWeight (1.5)
 
 line(50,40,69,43)
-line(57,41,115,100) //Long Branch
-line(115,100,160,200)//Long Branch
-line(79,89,87,72)
-line(87,72,100,89)
-line(119,110,109,124)
-line(119,110,149,124)
-line(137,150,129,154)
-line (137,150,154,154)
+line(57,41,120,100) //Long Branch
+line(120,100,160,200)//Long Branch
+line(79,89,87,70)
+line(100,82,100,89)
+line(124,110,109,115)
+line(124,110,149,124)
+line(138,145,129,154)
+line (138,145,154,154)
 
 
 // colour and stroke
@@ -157,6 +157,11 @@ line (137,150,154,154)
 
 
 
+}
+
+function Draw_Clouds (){
+
+  
 }
 
 

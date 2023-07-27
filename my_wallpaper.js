@@ -6,7 +6,7 @@
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -20,10 +20,10 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-  Draw_Lily_of_the_Valley (); 
+  Draw_Wallpaper (); 
 }
 
-function Draw_Lily_of_the_Valley (){
+function Draw_Wallpaper (){
   Draw_Lilies_Stem ();
   Draw_Lilies ();
 
@@ -195,6 +195,11 @@ function Draw_Lilies_Stem () {
   line (132,125,170,180)
 }
 
+function Draw_Leaf (){
+
+  beginShape ()
+  curvedVertex ()
+}
 
 }
 

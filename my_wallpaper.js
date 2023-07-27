@@ -1,23 +1,10 @@
 //your parameter variables go here!
   let Lily1x = 1;
   let Lily1y = 1;
-  let Lily2x = 20
-  let Lily2y = 4
-  let Lily3x = 30
-  let Lily3y = 40
-  let Lily4x = 55
-  let Lily4y = 50
-  let Lily5x = 60
-  let Lily5y = 75
-  let Lily6x = 100
-  let Lily6y = 85
-  let Lily7x = 80
-  let Lily7y = 115
-  let Lily8x = 105
-  let Lily8y = 115
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -37,24 +24,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 }
 
 function Draw_Lily_of_the_Valley (){
-
-//Branches
-stroke (99,138,99)
-strokeWeight (1.5)
-
-line(50,40,69,43)
-line(57,41,120,100) //Long Branch
-line(120,100,160,200)//Long Branch
-line(79,89,87,70)
-line(100,82,100,89)
-line(124,110,109,115)
-line(124,110,149,124)
-line(138,145,129,154)
-line (138,145,154,154)
+  Draw_Lilies_Stem ();
+  Draw_Lilies ();
 
 
-// colour and stroke
-  strokeWeight(1)
+function Draw_Lilies () {
+  
+  // colour and stroke
+  strokeWeight(0.5)
   stroke (180, 180, 184)
   fill(225,225,225)
 
@@ -73,96 +50,157 @@ line (138,145,154,154)
 
 //lily 2
   beginShape ();
-  vertex (Lily2x+39,Lily2y+49);
-  vertex (Lily2x+39,Lily2y+65);
-  vertex (Lily2x+44,Lily2y+59);
-  vertex (Lily2x+49,Lily2y+64);
-  vertex (Lily2x+54,Lily2y+59);
-  vertex (Lily2x+59,Lily2y+64);
-  vertex (Lily2x+59,Lily2y+49)
+  vertex (Lily1x+57,Lily1y+54);
+  vertex (Lily1x+57,Lily1y+70);
+  vertex (Lily1x+62,Lily1y+64);
+  vertex (Lily1x+67,Lily1y+69);
+  vertex (Lily1x+72,Lily1y+64);
+  vertex (Lily1x+77,Lily1y+69);
+  vertex (Lily1x+77,Lily1y+54)
   endShape (CLOSE);
-  ellipse(Lily2x+49,Lily2y+49,20,20)
+  ellipse(Lily1x+67,Lily1y+54,20,20)
 
 //lily 3
   beginShape ();
-  vertex (Lily3x+39,Lily3y+49);
-  vertex (Lily3x+39,Lily3y+65);
-  vertex (Lily3x+44,Lily3y+59);
-  vertex (Lily3x+49,Lily3y+64);
-  vertex (Lily3x+54,Lily3y+59);
-  vertex (Lily3x+59,Lily3y+64);
-  vertex (Lily3x+59,Lily3y+49)
+  vertex (Lily1x+69,Lily1y+88);
+  vertex (Lily1x+68,Lily1y+104);
+  vertex (Lily1x+73,Lily1y+98);
+  vertex (Lily1x+78,Lily1y+103);
+  vertex (Lily1x+83,Lily1y+98);
+  vertex (Lily1x+88,Lily1y+103);
+  vertex (Lily1x+88,Lily1y+88)
   endShape (CLOSE);
-  ellipse(Lily3x+49,Lily3y+49,20,20)
+  ellipse(Lily1x+78,Lily1y+88,20,20)
 
 //lily 4
   beginShape ();
-  vertex (Lily4x+35,Lily4y+49);
-  vertex (Lily4x+35,Lily4y+65);
-  vertex (Lily4x+40,Lily4y+59);
-  vertex (Lily4x+45,Lily4y+64);
-  vertex (Lily4x+50,Lily4y+59);
-  vertex (Lily4x+55,Lily4y+64);
-  vertex (Lily4x+55,Lily4y+49)
+  vertex (Lily1x+89,Lily1y+98);
+  vertex (Lily1x+89,Lily1y+114);
+  vertex (Lily1x+94,Lily1y+108);
+  vertex (Lily1x+99,Lily1y+113);
+  vertex (Lily1x+104,Lily1y+108);
+  vertex (Lily1x+109,Lily1y+113);
+  vertex (Lily1x+109,Lily1y+98)
   endShape (CLOSE);
-  ellipse(Lily4x+45,Lily4y+49,20,20)
+  ellipse(Lily1x+99,Lily1y+98,20,20)
 
 //lily 5
   beginShape ();
-  vertex (Lily5x+39,Lily5y+49);
-  vertex (Lily5x+39,Lily5y+65);
-  vertex (Lily5x+44,Lily5y+59);
-  vertex (Lily5x+49,Lily5y+64);
-  vertex (Lily5x+54,Lily5y+59);
-  vertex (Lily5x+59,Lily5y+64);
-  vertex (Lily5x+59,Lily5y+49)
+  vertex (Lily1x+98,Lily1y+123);
+  vertex (Lily1x+98,Lily1y+139);
+  vertex (Lily1x+103,Lily1y+133);
+  vertex (Lily1x+108,Lily1y+138);
+  vertex (Lily1x+113,Lily1y+133);
+  vertex (Lily1x+118,Lily1y+138);
+  vertex (Lily1x+118,Lily1y+123)
   endShape (CLOSE);
-  ellipse(Lily5x+49,Lily5y+49,20,20)
+  ellipse(Lily1x+108,Lily1y+123,20,20)
 
 //lily 6
   beginShape ();
-  vertex (Lily6x+39,Lily6y+49);
-  vertex (Lily6x+39,Lily6y+65);
-  vertex (Lily6x+44,Lily6y+59);
-  vertex (Lily6x+49,Lily6y+64);
-  vertex (Lily6x+54,Lily6y+59);
-  vertex (Lily6x+59,Lily6y+64);
-  vertex (Lily6x+59,Lily6y+49)
+  vertex (Lily1x+132,Lily1y+135);
+  vertex (Lily1x+132,Lily1y+151);
+  vertex (Lily1x+137,Lily1y+145);
+  vertex (Lily1x+142,Lily1y+150);
+  vertex (Lily1x+147,Lily1y+145);
+  vertex (Lily1x+152,Lily1y+150);
+  vertex (Lily1x+152,Lily1y+135)
   endShape (CLOSE);
-  ellipse(Lily6x+49,Lily6y+49,20,20)
+  ellipse(Lily1x+142,Lily1y+135,20,20)
 
 //lily 7
   beginShape ();
-  vertex (Lily7x+39,Lily7y+49);
-  vertex (Lily7x+39,Lily7y+65);
-  vertex (Lily7x+44,Lily7y+59);
-  vertex (Lily7x+49,Lily7y+64);
-  vertex (Lily7x+54,Lily7y+59);
-  vertex (Lily7x+59,Lily7y+64);
-  vertex (Lily7x+59,Lily7y+49)
+  vertex (Lily1x+116,Lily1y+163);
+  vertex (Lily1x+116,Lily1y+179);
+  vertex (Lily1x+121,Lily1y+173);
+  vertex (Lily1x+126,Lily1y+178);
+  vertex (Lily1x+131,Lily1y+173);
+  vertex (Lily1x+136,Lily1y+178);
+  vertex (Lily1x+136,Lily1y+163)
   endShape (CLOSE);
-  ellipse(Lily7x+49,Lily7y+49,20,20)
+  ellipse(Lily1x+126,Lily1y+163,20,20)
 
 //lily 8
   beginShape ();
-  vertex (Lily8x+39,Lily8y+49);
-  vertex (Lily8x+39,Lily8y+65);
-  vertex (Lily8x+44,Lily8y+59);
-  vertex (Lily8x+49,Lily8y+64);
-  vertex (Lily8x+54,Lily8y+59);
-  vertex (Lily8x+59,Lily8y+64);
-  vertex (Lily8x+59,Lily8y+49)
+  vertex (Lily1x+143,Lily1y+170);
+  vertex (Lily1x+144,Lily1y+186);
+  vertex (Lily1x+148,Lily1y+180);
+  vertex (Lily1x+154,Lily1y+185);
+  vertex (Lily1x+158,Lily1y+180);
+  vertex (Lily1x+163,Lily1y+185);
+  vertex (Lily1x+163,Lily1y+170)
   endShape (CLOSE);
-  ellipse(Lily8x+49,Lily8y+49,20,20)
+  ellipse(Lily1x+153,Lily1y+170,20,20)
 
+}
+  
+function Draw_Lilies_Stem () { 
+  
+  stroke (99,138,99)
+  fill (38, 38, 43);
+  strokeWeight (1.5)
+    
+  beginShape ();
+  curveVertex (50,40);
+  curveVertex (50,40);
+  curveVertex (60,30);
+  curveVertex (75,42);
+  curveVertex (75,42);
+  endShape ();
+
+  beginShape ();
+  curveVertex (66,55);
+  curveVertex (66,55);
+  curveVertex (75,38);
+  curveVertex (90,58);
+  curveVertex (90,58);
+  endShape ();
+
+  beginShape ();
+  curveVertex (78,89);
+  curveVertex (78,89);
+  curveVertex (83,59);
+  curveVertex (94,64);
+  curveVertex (94,64);
+  endShape ();
+
+  beginShape();
+  curveVertex (100,99);
+  curveVertex (100,99);
+  curveVertex (98,75);
+  curveVertex (103,76);
+  curveVertex (103,76);
+  endShape ();
+
+  beginShape ();
+  curveVertex (107,124);
+  curveVertex (107,124);
+  curveVertex (110,100);
+  curveVertex (120,100);
+  curveVertex (120,100);
+  endShape ();
+
+  beginShape ();
+  curveVertex (127,164);
+  curveVertex (127,164);
+  curveVertex (125,125);
+  curveVertex (132,125);
+  curveVertex (132,125);
+  endShape ();
+
+  line (154,164,154,157)
+
+  line (90,58,120,100)
+  line (120,100,132,125)
+  line (132,125,170,180)
+}
 
 
 }
 
-function Draw_Clouds (){
+
 
   
-}
 
 
     

@@ -1,6 +1,10 @@
 //your parameter variables go here!
   let Lily1x = 1;
   let Lily1y = 1;
+  let Leafx = 1;
+  let Leafy = 1;
+
+  let LilySize = 1    
 
 
 function setup_wallpaper(pWallpaper) {
@@ -26,6 +30,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 function Draw_Wallpaper (){
   Draw_Lilies_Stem ();
   Draw_Lilies ();
+  Draw_Leaf();
 
 
 function Draw_Lilies () {
@@ -196,12 +201,65 @@ function Draw_Lilies_Stem () {
 }
 
 function Draw_Leaf (){
+  
+  fill (99,138,99);
+  stroke (62, 87, 62)
+  strokeWeight (1);
+ //1
+  beginShape ();
+  curveVertex (Leafx+35,Leafy+190);
+  curveVertex (Leafx+35,Leafy+190);
+  curveVertex (Leafx+25,Leafy+170);
+  curveVertex (Leafx+30,Leafy+150);
+  curveVertex (Leafx+30,Leafy+150);
+  endShape (CLOSE);
 
-  beginShape ()
-  curvedVertex ()
+  beginShape ();
+  curveVertex (Leafx+35,Leafy+190);
+  curveVertex (Leafx+35,Leafy+190);
+  curveVertex (Leafx+40,Leafy+170);
+  curveVertex (Leafx+30,Leafy+150);
+  curveVertex (Leafx+30,Leafy+150);
+  endShape (CLOSE);
+
+  //2
+  beginShape ();
+  curveVertex (Leafx+55,Leafy+165);
+  curveVertex (Leafx+55,Leafy+165);
+  curveVertex (Leafx+35,Leafy+150);
+  curveVertex (Leafx+30,Leafy+130);
+  curveVertex (Leafx+30,Leafy+130);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leafx+55,Leafy+165);
+  curveVertex (Leafx+55,Leafy+165);
+  curveVertex (Leafx+48,Leafy+143);
+  curveVertex (Leafx+30,Leafy+130);
+  curveVertex (Leafx+30,Leafy+130);
+  endShape (CLOSE);
+  
+  //3
+  beginShape ();
+  curveVertex (Leafx+10,Leafy+165);
+  curveVertex (Leafx+10,Leafy+165);
+  curveVertex (Leafx+26,Leafy+150);
+  curveVertex (Leafx+30,Leafy+130);
+  curveVertex (Leafx+30,Leafy+130);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leafx+10,Leafy+165);
+  curveVertex (Leafx+10,Leafy+165);
+  curveVertex (Leafx+13,Leafy+143);
+  curveVertex (Leafx+30,Leafy+130);
+  curveVertex (Leafx+30,Leafy+130);
+  endShape (CLOSE);
+
+
+}
 }
 
-}
 
 
 

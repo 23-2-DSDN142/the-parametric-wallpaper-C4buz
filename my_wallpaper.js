@@ -8,6 +8,9 @@
   let Leaf2x = 135;
   let Leaf2y = -70;
 
+  let bluex = 0;
+  let bluey = 0;
+
   let LilySize = 1    
 
 
@@ -517,14 +520,38 @@ function Draw_Leaf2(){
 
 }
 function DrawBlueFlower (){
-
+  //1
   fill (117,162,203);
   strokeWeight (0);
-  ellipse (80,179.8,4,4);
-  ellipse (77,182,4,4);
-  ellipse (83,182,4,4);
-  ellipse (81.8,185,4,4);
-  ellipse (78.2,185,4,4);
+  ellipse (bluex+80,bluey+180,3,3);
+  ellipse (bluex+77.5,bluey+181.7,3,3);
+  ellipse (bluex+82.5,bluey+181.7,3,3);
+  ellipse (bluex+81.5,bluey+184.5,3,3);
+  ellipse (bluex+78.5,bluey+184.5,3,3);
+  fill (255,255,255)
+  ellipse(bluex+80,bluey+182.5,2,2);
+
+  //2
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+110,bluey+170,3,3);
+  ellipse (bluex+107.5,bluey+171.7,3,3);
+  ellipse (bluex+112.5,bluey+171.7,3,3);
+  ellipse (bluex+111.5,bluey+174.5,3,3);
+  ellipse (bluex+108.5,bluey+174.5,3,3);
+  fill (255,255,255)
+  ellipse(bluex+110,bluey+172.5,2,2);
+
+  //3
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+80,bluey+190,3,3);
+  ellipse (bluex+77.5,bluey+181.7,3,3);
+  ellipse (bluex+82.5,bluey+181.7,3,3);
+  ellipse (bluex+81.5,bluey+184.5,3,3);
+  ellipse (bluex+78.5,bluey+184.5,3,3);
+  fill (255,255,255)
+  ellipse(bluex+80,bluey+182.5,2,2);
 
   //background arc =true (if statements (if true) for backdrop stuff)
 

@@ -1,6 +1,6 @@
 //your parameter variables go here!
-  let Lily1x = 0;
-  let Lily1y = -15;
+  let Lily1x = 10;
+  let Lily1y = -1;
 
   let Leafx = 3;
   let Leafy = 5;
@@ -36,8 +36,8 @@ function Draw_Wallpaper (){
   Draw_Lilies_Stem ();
   Draw_Leaf();
   Draw_Leaf2();
-
-  Draw_tiny();
+  DrawBlueFlower ();
+}
 
 
 function Draw_Lilies () {
@@ -516,7 +516,20 @@ function Draw_Leaf2(){
 
 
 }
+function DrawBlueFlower (){
+
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (80,179.8,4,4);
+  ellipse (77,182,4,4);
+  ellipse (83,182,4,4);
+  ellipse (81.8,185,4,4);
+  ellipse (78.2,185,4,4);
+
+  //background arc =true (if statements (if true) for backdrop stuff)
+
 }
+
 
 
 

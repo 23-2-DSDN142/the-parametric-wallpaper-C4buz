@@ -1,8 +1,12 @@
 //your parameter variables go here!
   let Lily1x = 0;
   let Lily1y = -15;
+
   let Leafx = 3;
   let Leafy = 5;
+
+  let Leaf2x = 135;
+  let Leaf2y = -70;
 
   let LilySize = 1    
 
@@ -31,6 +35,8 @@ function Draw_Wallpaper (){
   Draw_Lilies ();
   Draw_Lilies_Stem ();
   Draw_Leaf();
+  Draw_Leaf2();
+
   Draw_tiny();
 
 
@@ -371,6 +377,144 @@ function Draw_Leaf (){
   curveVertex (Leafx+37,Leafy+70);
   curveVertex (Leafx+37,Leafy+70);
   endShape ();
+}
+function Draw_Leaf2(){
+  fill (99,138,99);
+  stroke (62, 87, 62)
+  strokeWeight (1);
+
+ //1
+  beginShape ();
+  curveVertex (Leaf2x+38,Leaf2y+190);
+  curveVertex (Leaf2x+38,Leaf2y+190);
+  curveVertex (Leaf2x+27,Leaf2y+170);
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+38,Leaf2y+190);
+  curveVertex (Leaf2x+38,Leaf2y+190);
+  curveVertex (Leaf2x+42,Leaf2y+170);
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  endShape (CLOSE);
+
+  //2
+  beginShape ();
+  curveVertex (Leaf2x+57,Leaf2y+165);
+  curveVertex (Leaf2x+57,Leaf2y+165);
+  curveVertex (Leaf2x+39,Leaf2y+150);
+  curveVertex (Leaf2x+32,Leaf2y+130);
+  curveVertex (Leaf2x+32,Leaf2y+130);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+57,Leaf2y+165);
+  curveVertex (Leaf2x+57,Leaf2y+165);
+  curveVertex (Leaf2x+50,Leaf2y+143);
+  curveVertex (Leaf2x+32,Leaf2y+130);
+  curveVertex (Leaf2x+32,Leaf2y+130);
+  endShape (CLOSE);
+  
+  //3
+  beginShape ();
+  curveVertex (Leaf2x+8,Leaf2y+165);
+  curveVertex (Leaf2x+8,Leaf2y+165);
+  curveVertex (Leaf2x+24,Leaf2y+150);
+  curveVertex (Leaf2x+28,Leaf2y+130);
+  curveVertex (Leaf2x+28,Leaf2y+130);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+8,Leaf2y+165);
+  curveVertex (Leaf2x+8,Leaf2y+165);
+  curveVertex (Leaf2x+11,Leaf2y+143);
+  curveVertex (Leaf2x+28,Leaf2y+130);
+  curveVertex (Leaf2x+28,Leaf2y+130);
+  endShape (CLOSE);
+
+  //4
+  beginShape ();
+  curveVertex (Leaf2x+6,Leaf2y+133);
+  curveVertex (Leaf2x+6,Leaf2y+133);
+  curveVertex (Leaf2x+25,Leaf2y+121);
+  curveVertex (Leaf2x+31,Leaf2y+103);
+  curveVertex (Leaf2x+31,Leaf2y+103);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+6,Leaf2y+133);
+  curveVertex (Leaf2x+6,Leaf2y+133);
+  curveVertex (Leaf2x+13,Leaf2y+114);
+  curveVertex (Leaf2x+31,Leaf2y+103);
+  curveVertex (Leaf2x+31,Leaf2y+103);
+  endShape (CLOSE);
+
+  //5
+  beginShape ();
+  curveVertex (Leaf2x+57,Leaf2y+134);
+  curveVertex (Leaf2x+57,Leaf2y+134);
+  curveVertex (Leaf2x+51,Leaf2y+116);
+  curveVertex (Leaf2x+35,Leaf2y+104);
+  curveVertex (Leaf2x+35,Leaf2y+104);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+57,Leaf2y+134);
+  curveVertex (Leaf2x+57,Leaf2y+134);
+  curveVertex (Leaf2x+38,Leaf2y+122);
+  curveVertex (Leaf2x+35,Leaf2y+104);
+  curveVertex (Leaf2x+35,Leaf2y+104);
+  endShape (CLOSE);
+
+  //6
+  beginShape ();
+  curveVertex (Leaf2x+58,Leaf2y+111);
+  curveVertex (Leaf2x+58,Leaf2y+111);
+  curveVertex (Leaf2x+53,Leaf2y+93);
+  curveVertex (Leaf2x+38,Leaf2y+81);
+  curveVertex (Leaf2x+38,Leaf2y+81);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+58,Leaf2y+111);
+  curveVertex (Leaf2x+58,Leaf2y+111);
+  curveVertex (Leaf2x+43,Leaf2y+99);
+  curveVertex (Leaf2x+38,Leaf2y+81);
+  curveVertex (Leaf2x+38,Leaf2y+81);
+  endShape (CLOSE);
+
+  //7
+  beginShape ();
+  curveVertex (Leaf2x+8,Leaf2y+105);
+  curveVertex (Leaf2x+8,Leaf2y+105);
+  curveVertex (Leaf2x+29,Leaf2y+95);
+  curveVertex (Leaf2x+34,Leaf2y+80);
+  curveVertex (Leaf2x+34,Leaf2y+80);
+  endShape (CLOSE);
+
+  beginShape ();
+  curveVertex (Leaf2x+8,Leaf2y+105);
+  curveVertex (Leaf2x+8,Leaf2y+105);
+  curveVertex (Leaf2x+18,Leaf2y+87);
+  curveVertex (Leaf2x+34,Leaf2y+80);
+  curveVertex (Leaf2x+34,Leaf2y+80);
+  endShape (CLOSE);
+
+  //Stalk
+  noFill ();
+  strokeWeight (2)
+  
+  beginShape ();
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  curveVertex (Leaf2x+31,Leaf2y+150);
+  curveVertex (Leaf2x+30,Leaf2y+130);
+  curveVertex (Leaf2x+37,Leaf2y+70);
+  curveVertex (Leaf2x+37,Leaf2y+70);
+  endShape ();
+
+
 }
 }
 

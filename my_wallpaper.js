@@ -1,15 +1,15 @@
 //your parameter variables go here!
-  let Lily1x = 15;
+  let Lily1x = 0;
   let Lily1y = -15;
-  let Leafx = 1;
-  let Leafy = 1;
+  let Leafx = 3;
+  let Leafy = 5;
 
   let LilySize = 1    
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -31,6 +31,7 @@ function Draw_Wallpaper (){
   Draw_Lilies ();
   Draw_Lilies_Stem ();
   Draw_Leaf();
+  Draw_tiny();
 
 
 function Draw_Lilies () {
@@ -142,7 +143,7 @@ function Draw_Lilies () {
   
 function Draw_Lilies_Stem () { 
   
-  stroke (99,138,99)
+  stroke (99,138,99);
   noFill (38, 38, 43);
   strokeWeight (1.5)
     
@@ -218,6 +219,19 @@ function Draw_Lilies_Stem () {
   curveVertex (Lily1x+163,Lily1y+191);
   curveVertex (Lily1x+163,Lily1y+191);
   endShape ();
+
+  fill(99,138,99)
+  beginShape ();
+  curveVertex (Lily1x+163,Lily1y+191);
+  curveVertex (Lily1x+163,Lily1y+191);
+  curveVertex (Lily1x+166,Lily1y+189);
+  curveVertex (Lily1x+160,Lily1y+155);
+  curveVertex (Lily1x+143,Lily1y+124);
+  curveVertex (Lily1x+143,Lily1y+124);
+  curveVertex (Lily1x+157,Lily1y+150);
+  curveVertex (Lily1x+157,Lily1y+150);
+  endShape ();
+
   
 }
 
@@ -346,8 +360,17 @@ function Draw_Leaf (){
   curveVertex (Leafx+34,Leafy+80);
   endShape (CLOSE);
 
-  curveVertex(  )
-
+  //Stalk
+  noFill ();
+  strokeWeight (2)
+  
+  beginShape ();
+  curveVertex (Leafx+31,Leafy+150);
+  curveVertex (Leafx+31,Leafy+150);
+  curveVertex (Leafx+30,Leafy+130);
+  curveVertex (Leafx+37,Leafy+70);
+  curveVertex (Leafx+37,Leafy+70);
+  endShape ();
 }
 }
 

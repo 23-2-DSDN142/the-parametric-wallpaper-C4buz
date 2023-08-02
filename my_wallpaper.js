@@ -84,3 +84,9 @@ ellipse (bodyX+35,bodyY-12,2,2)
 
 }
 
+function Draw_Clovers (){
+
+fill (117,153,101)
+triangle (100,100,90,90,90,110)
+}
+

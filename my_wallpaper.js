@@ -1,6 +1,6 @@
 //your parameter variables go here!
-  let Lily1x = 10;
-  let Lily1y = -1;
+  let Lily1x = 15;
+  let Lily1y = 5;
 
   let Leafx = 3;
   let Leafy = 5;
@@ -11,11 +11,14 @@
   let bluex = 0;
   let bluey = 0;
 
-  let LilySize = 1    
+  let blue2x = -65;
+  let blue2y = -120;
 
+  let petalsize = 3;
+  let middlesize =2;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -520,38 +523,202 @@ function Draw_Leaf2(){
 
 }
 function DrawBlueFlower (){
+  //Blue Flower Lower
+  //Branches
+  strokeWeight (1)
+  stroke (99,138,99);
+  noFill (38, 38, 43);
+  
+  beginShape ();
+  curveVertex (bluex+85,bluey+135.5);
+  curveVertex (bluex+85,bluey+135.5);
+  curveVertex (bluex+95,bluey+170);
+  curveVertex (bluex+95,bluey+195);
+  curveVertex (bluex+95,bluey+195);
+  endShape ();
+
+  line (bluex+80,bluey+187.5,bluex+95,bluey+190);
+  line (bluex+112,bluey+174.5,bluex+96,bluey+185);
+  line (bluex+78,bluey+168.5,bluex+95.5,bluey+180);
+  line (bluex+107,bluey+155.5,bluex+95,bluey+170);
+  line (bluex+77,bluey+152.5,bluex+92,bluey+160);
+  line (bluex+97,bluey+142.5,bluex+90,bluey+151)
+ 
   //1
   fill (117,162,203);
   strokeWeight (0);
-  ellipse (bluex+80,bluey+180,3,3);
-  ellipse (bluex+77.5,bluey+181.7,3,3);
-  ellipse (bluex+82.5,bluey+181.7,3,3);
-  ellipse (bluex+81.5,bluey+184.5,3,3);
-  ellipse (bluex+78.5,bluey+184.5,3,3);
+  ellipse (bluex+80,bluey+185,petalsize,petalsize);
+  ellipse (bluex+77.8,bluey+186.7,petalsize,petalsize);
+  ellipse (bluex+82.3,bluey+186.7,petalsize,petalsize);
+  ellipse (bluex+81.5,bluey+189.5,petalsize,petalsize);
+  ellipse (bluex+78.5,bluey+189.5,petalsize,petalsize);
   fill (255,255,255)
-  ellipse(bluex+80,bluey+182.5,2,2);
+  ellipse(bluex+80,bluey+187.5,middlesize,middlesize);
 
   //2
   fill (117,162,203);
   strokeWeight (0);
-  ellipse (bluex+110,bluey+170,3,3);
-  ellipse (bluex+107.5,bluey+171.7,3,3);
-  ellipse (bluex+112.5,bluey+171.7,3,3);
-  ellipse (bluex+111.5,bluey+174.5,3,3);
-  ellipse (bluex+108.5,bluey+174.5,3,3);
+  ellipse (bluex+112,bluey+172,petalsize,petalsize);
+  ellipse (bluex+109.8,bluey+173.7,petalsize,petalsize);
+  ellipse (bluex+114.3,bluey+173.7,petalsize,petalsize);
+  ellipse (bluex+113.5,bluey+176.5,petalsize,petalsize);
+  ellipse (bluex+110.5,bluey+176.5,petalsize,petalsize);
   fill (255,255,255)
-  ellipse(bluex+110,bluey+172.5,2,2);
+  ellipse(bluex+112,bluey+174.5,middlesize,middlesize);
 
   //3
   fill (117,162,203);
   strokeWeight (0);
-  ellipse (bluex+80,bluey+190,3,3);
-  ellipse (bluex+77.5,bluey+181.7,3,3);
-  ellipse (bluex+82.5,bluey+181.7,3,3);
-  ellipse (bluex+81.5,bluey+184.5,3,3);
-  ellipse (bluex+78.5,bluey+184.5,3,3);
+  ellipse (bluex+78,bluey+166,petalsize,petalsize);
+  ellipse (bluex+75.8,bluey+167.7,petalsize,petalsize);
+  ellipse (bluex+80.3,bluey+167.7,petalsize,petalsize);
+  ellipse (bluex+79.5,bluey+170.5,petalsize,petalsize);
+  ellipse (bluex+76.5,bluey+170.5,petalsize,petalsize);
   fill (255,255,255)
-  ellipse(bluex+80,bluey+182.5,2,2);
+  ellipse(bluex+78,bluey+168.5,middlesize,middlesize);
+
+  //4
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+107,bluey+153,petalsize,petalsize);
+  ellipse (bluex+104.8,bluey+154.7,petalsize,petalsize);
+  ellipse (bluex+109.3,bluey+154.7,petalsize,petalsize);
+  ellipse (bluex+108.5,bluey+157.5,petalsize,petalsize);
+  ellipse (bluex+105.5,bluey+157.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(bluex+107,bluey+155.5,middlesize,middlesize);
+
+  //5
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+77,bluey+150,petalsize,petalsize);
+  ellipse (bluex+74.8,bluey+151.7,petalsize,petalsize);
+  ellipse (bluex+79.3,bluey+151.7,petalsize,petalsize);
+  ellipse (bluex+78.5,bluey+154.5,petalsize,petalsize);
+  ellipse (bluex+75.5,bluey+154.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(bluex+77,bluey+152.5,middlesize,middlesize);
+  
+  //6
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+97,bluey+140,petalsize,petalsize);
+  ellipse (bluex+94.8,bluey+141.7,petalsize,petalsize);
+  ellipse (bluex+99.3,bluey+141.7,petalsize,petalsize);
+  ellipse (bluex+98.5,bluey+144.5,petalsize,petalsize);
+  ellipse (bluex+95.5,bluey+144.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(bluex+97,bluey+142.5,middlesize,middlesize);
+  
+  //7
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (bluex+85,bluey+133,petalsize,petalsize);
+  ellipse (bluex+82.8,bluey+134.7,petalsize,petalsize);
+  ellipse (bluex+87.3,bluey+134.7,petalsize,petalsize);
+  ellipse (bluex+86.5,bluey+137.5,petalsize,petalsize);
+  ellipse (bluex+83.5,bluey+137.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(bluex+85,bluey+135.5,middlesize,middlesize);
+
+
+  //Blue Flower Upper
+  strokeWeight (1)
+  stroke (99,138,99);
+  noFill (38, 38, 43);
+  
+  beginShape ();
+  curveVertex (blue2x+95,blue2y+132.5);
+  curveVertex (blue2x+95,blue2y+132.5);
+  curveVertex (blue2x+90,blue2y+162);
+  curveVertex (blue2x+95,blue2y+195);
+  curveVertex (blue2x+95,blue2y+195);
+  endShape ();
+
+  line (blue2x+79,blue2y+182.5,blue2x+94,blue2y+190);
+  line (blue2x+108,blue2y+176,blue2x+93.5,blue2y+185);
+  line (blue2x+78,blue2y+163.5,blue2x+91,blue2y+175);
+  line (blue2x+107,blue2y+160.5,blue2x+91,blue2y+170);
+  line (blue2x+80,blue2y+143.5,blue2x+90,blue2y+160);
+  line (blue2x+100,blue2y+147.5,blue2x+91.5,blue2y+151)
+ 
+  //1
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+80,blue2y+180,petalsize,petalsize);
+  ellipse (blue2x+77.8,blue2y+181.7,petalsize,petalsize);
+  ellipse (blue2x+82.3,blue2y+181.7,petalsize,petalsize);
+  ellipse (blue2x+81.5,blue2y+184.5,petalsize,petalsize);
+  ellipse (blue2x+78.5,blue2y+184.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+80,blue2y+182.5,middlesize,middlesize);
+
+  //2
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+107,blue2y+175,petalsize,petalsize);
+  ellipse (blue2x+104.8,blue2y+176.7,petalsize,petalsize);
+  ellipse (blue2x+109.3,blue2y+176.7,petalsize,petalsize);
+  ellipse (blue2x+108.5,blue2y+179.5,petalsize,petalsize);
+  ellipse (blue2x+105.5,blue2y+179.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+107,blue2y+177.5,middlesize,middlesize);
+
+  //3
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+78,blue2y+161,petalsize,petalsize);
+  ellipse (blue2x+75.8,blue2y+162.7,petalsize,petalsize);
+  ellipse (blue2x+80.3,blue2y+162.7,petalsize,petalsize);
+  ellipse (blue2x+79.5,blue2y+165.5,petalsize,petalsize);
+  ellipse (blue2x+76.5,blue2y+165.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+78,blue2y+163.5,middlesize,middlesize);
+
+  //4
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+107,blue2y+158,petalsize,petalsize);
+  ellipse (blue2x+104.8,blue2y+159.7,petalsize,petalsize);
+  ellipse (blue2x+109.3,blue2y+159.7,petalsize,petalsize);
+  ellipse (blue2x+108.5,blue2y+162.5,petalsize,petalsize);
+  ellipse (blue2x+105.5,blue2y+162.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+107,blue2y+160.5,middlesize,middlesize);
+
+  //5
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+80,blue2y+141,petalsize,petalsize);
+  ellipse (blue2x+77.8,blue2y+142.7,petalsize,petalsize);
+  ellipse (blue2x+82.3,blue2y+142.7,petalsize,petalsize);
+  ellipse (blue2x+81.5,blue2y+145.5,petalsize,petalsize);
+  ellipse (blue2x+78.5,blue2y+145.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+80,blue2y+143.5,middlesize,middlesize);
+  
+  //6
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+100,blue2y+145,petalsize,petalsize);
+  ellipse (blue2x+97.8,blue2y+146.7,petalsize,petalsize);
+  ellipse (blue2x+102.3,blue2y+146.7,petalsize,petalsize);
+  ellipse (blue2x+101.5,blue2y+149.5,petalsize,petalsize);
+  ellipse (blue2x+98.5,blue2y+149.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+100,blue2y+147.5,middlesize,middlesize);
+  
+  //7
+  fill (117,162,203);
+  strokeWeight (0);
+  ellipse (blue2x+95,blue2y+130,petalsize,petalsize);
+  ellipse (blue2x+92.8,blue2y+131.7,petalsize,petalsize);
+  ellipse (blue2x+97.3,blue2y+131.7,petalsize,petalsize);
+  ellipse (blue2x+96.5,blue2y+134.5,petalsize,petalsize);
+  ellipse (blue2x+93.5,blue2y+134.5,petalsize,petalsize);
+  fill (255,255,255)
+  ellipse(blue2x+95,blue2y+132.5,middlesize,middlesize);
+ 
 
   //background arc =true (if statements (if true) for backdrop stuff)
 

@@ -6,7 +6,12 @@
   let Leafy = 5;
 
   let Leaf2x = 135;
-  let Leaf2y = -70;
+  let Leaf2y = -75;
+
+  let LeafOutline = 1;
+
+  let Butterflyx = 0;
+  let Butterflyy = 2;
 
   let bluex = 0;
   let bluey = 0;
@@ -18,7 +23,7 @@
   let middlesize =2;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -38,11 +43,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 }
 
 function Draw_Wallpaper (){
+  Draw_Butterfly();
   Draw_Lilies ();
   Draw_Lilies_Stem ();
   Draw_Leaf();
   Draw_Leaf2();
   DrawBlueFlower ();
+  
 }
 
 
@@ -251,7 +258,7 @@ function Draw_Leaf (){
   
   fill (99,138,99);
   stroke (62, 87, 62)
-  strokeWeight (1);
+  strokeWeight (LeafOutline);
 
  //1
   beginShape ();
@@ -387,7 +394,7 @@ function Draw_Leaf (){
 function Draw_Leaf2(){
   fill (99,138,99);
   stroke (62, 87, 62)
-  strokeWeight (1);
+  strokeWeight (LeafOutline);
 
  //1
   beginShape ();
@@ -721,6 +728,61 @@ function DrawBlueFlower (){
  
 
   //background arc =true (if statements (if true) for backdrop stuff)
+
+}
+
+function Draw_Butterfly(){
+  stroke (17, 36, 46)
+  strokeWeight (0.5);
+
+  //TopWing
+  fill (135, 154, 161);
+
+  beginShape ();
+  curveVertex (Butterflyx+90,Butterflyy+35);
+  curveVertex (Butterflyx+90,Butterflyy+35);
+  curveVertex (Butterflyx+80,Butterflyy+10);
+  curveVertex (Butterflyx+95,Butterflyy+8);
+  curveVertex (Butterflyx+108,Butterflyy+15);
+  curveVertex (Butterflyx+100,Butterflyy+40);
+  curveVertex (Butterflyx+100,Butterflyy+40);
+  endShape();
+  
+  //LowerWing
+  fill (137, 153, 161);
+
+  beginShape ();
+  curveVertex (Butterflyx+92,Butterflyy+36);
+  curveVertex (Butterflyx+92,Butterflyy+36);
+  curveVertex (Butterflyx+110,Butterflyy+20);
+  curveVertex (Butterflyx+115,Butterflyy+35);
+  curveVertex (Butterflyx+95,Butterflyy+40);
+  curveVertex (Butterflyx+95,Butterflyy+40);
+  endShape();
+
+  //body
+  fill(168, 127, 91);
+  strokeWeight (0);
+
+  beginShape ();
+  curveVertex (Butterflyx+88,Butterflyy+33);
+  curveVertex (Butterflyx+88,Butterflyy+33);
+  curveVertex (Butterflyx+103,Butterflyy+43);
+  curveVertex (Butterflyx+103,Butterflyy+45);
+  curveVertex (Butterflyx+90,Butterflyy+38);
+  curveVertex (Butterflyx+89,Butterflyy+33);
+  curveVertex (Butterflyx+89,Butterflyy+33);
+  endShape();
+
+  ellipse (Butterflyx+88,Butterflyy+35,4,4);
+
+  //antennae
+  strokeWeight (1)
+  stroke(168, 127, 91);
+  line (Butterflyx+88,Butterflyy+35,Butterflyx+86,Butterflyy+30)
+  line (Butterflyx+88,Butterflyy+36,Butterflyx+83,Butterflyy+32)
+  
+
 
 }
 

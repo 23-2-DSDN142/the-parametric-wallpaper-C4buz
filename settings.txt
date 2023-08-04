@@ -1,4 +1,52 @@
 /////////////////////////////////
 
 Wallpaper 1:
+let Lily1x = 15;
+let Lily1y = 5;
+
+let Leafx = 8;
+let Leafy = 10;
+
+let Leaf2x = 135;
+let Leaf2y = -75;
+
+let LeafOutline = 1;
+
+let Butterflyx = 10;
+let Butterflyy = 2;
+
+let bluex = 0;
+let bluey = 0;
+
+let blue2x = -65;
+let blue2y = -120;
+
+let petalsize = 3;
+let middlesize =2;
+
+let heartx = 0;
+let hearty = -25;
+
+let butterfly = true;  
+
+let background_colour = (38,38,43);
+let leaf_colour= (99,138,99);
+let leaf_stroke_colour = (62,87,62)
+let butterflycolour = ("#a7c7cc");
+let heartleaf_colour = (182,212,165);
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+
+////////////////////////////////////////////////
+
+Wallpaper 2:
 

@@ -29,7 +29,7 @@ let butterfly = true;
 
 let background_colour = (38,38,43);
 let leaf_colour= (99,138,99);
-let leaf_stroke_colour = (62,87,62)
+let leaf_stroke_colour = (62,87,62);
 let butterflycolour = ("#a7c7cc");
 let heartleaf_colour = (182,212,165);
 

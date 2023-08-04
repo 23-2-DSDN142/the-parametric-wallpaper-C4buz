@@ -391,70 +391,70 @@ function Draw_Leaf2(){
 
  //1
   beginShape ();
-  curveVertex (Leaf2x+38,Leaf2y+190);
-  curveVertex (Leaf2x+38,Leaf2y+190);
-  curveVertex (Leaf2x+27,Leaf2y+170);
+  curveVertex (Leaf2x+25,Leaf2y+190);
+  curveVertex (Leaf2x+25,Leaf2y+190);
+  curveVertex (Leaf2x+20,Leaf2y+168);
   curveVertex (Leaf2x+31,Leaf2y+150);
   curveVertex (Leaf2x+31,Leaf2y+150);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+38,Leaf2y+190);
-  curveVertex (Leaf2x+38,Leaf2y+190);
-  curveVertex (Leaf2x+42,Leaf2y+170);
+  curveVertex (Leaf2x+25,Leaf2y+190);
+  curveVertex (Leaf2x+25,Leaf2y+190);
+  curveVertex (Leaf2x+35,Leaf2y+170);
   curveVertex (Leaf2x+31,Leaf2y+150);
   curveVertex (Leaf2x+31,Leaf2y+150);
   endShape (CLOSE);
 
   //2
   beginShape ();
-  curveVertex (Leaf2x+57,Leaf2y+165);
-  curveVertex (Leaf2x+57,Leaf2y+165);
-  curveVertex (Leaf2x+39,Leaf2y+150);
-  curveVertex (Leaf2x+32,Leaf2y+130);
-  curveVertex (Leaf2x+32,Leaf2y+130);
+  curveVertex (Leaf2x+60,Leaf2y+165);
+  curveVertex (Leaf2x+60,Leaf2y+165);
+  curveVertex (Leaf2x+42,Leaf2y+150);
+  curveVertex (Leaf2x+35,Leaf2y+130);
+  curveVertex (Leaf2x+35,Leaf2y+130);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+57,Leaf2y+165);
-  curveVertex (Leaf2x+57,Leaf2y+165);
-  curveVertex (Leaf2x+50,Leaf2y+143);
-  curveVertex (Leaf2x+32,Leaf2y+130);
-  curveVertex (Leaf2x+32,Leaf2y+130);
+  curveVertex (Leaf2x+60,Leaf2y+165);
+  curveVertex (Leaf2x+60,Leaf2y+165);
+  curveVertex (Leaf2x+53,Leaf2y+143);
+  curveVertex (Leaf2x+35,Leaf2y+130);
+  curveVertex (Leaf2x+35,Leaf2y+130);
   endShape (CLOSE);
   
   //3
   beginShape ();
-  curveVertex (Leaf2x+8,Leaf2y+165);
-  curveVertex (Leaf2x+8,Leaf2y+165);
-  curveVertex (Leaf2x+24,Leaf2y+150);
-  curveVertex (Leaf2x+28,Leaf2y+130);
-  curveVertex (Leaf2x+28,Leaf2y+130);
+  curveVertex (Leaf2x+10,Leaf2y+165);
+  curveVertex (Leaf2x+10,Leaf2y+165);
+  curveVertex (Leaf2x+26,Leaf2y+150);
+  curveVertex (Leaf2x+30,Leaf2y+130);
+  curveVertex (Leaf2x+30,Leaf2y+130);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+8,Leaf2y+165);
-  curveVertex (Leaf2x+8,Leaf2y+165);
-  curveVertex (Leaf2x+11,Leaf2y+143);
-  curveVertex (Leaf2x+28,Leaf2y+130);
-  curveVertex (Leaf2x+28,Leaf2y+130);
+  curveVertex (Leaf2x+10,Leaf2y+165);
+  curveVertex (Leaf2x+10,Leaf2y+165);
+  curveVertex (Leaf2x+13,Leaf2y+143);
+  curveVertex (Leaf2x+30,Leaf2y+130);
+  curveVertex (Leaf2x+30,Leaf2y+130);
   endShape (CLOSE);
 
   //4
   beginShape ();
-  curveVertex (Leaf2x+6,Leaf2y+133);
-  curveVertex (Leaf2x+6,Leaf2y+133);
-  curveVertex (Leaf2x+25,Leaf2y+121);
-  curveVertex (Leaf2x+31,Leaf2y+103);
-  curveVertex (Leaf2x+31,Leaf2y+103);
+  curveVertex (Leaf2x+1,Leaf2y+133);
+  curveVertex (Leaf2x+1,Leaf2y+133);
+  curveVertex (Leaf2x+20,Leaf2y+121);
+  curveVertex (Leaf2x+26,Leaf2y+103);
+  curveVertex (Leaf2x+26,Leaf2y+103);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+6,Leaf2y+133);
-  curveVertex (Leaf2x+6,Leaf2y+133);
-  curveVertex (Leaf2x+13,Leaf2y+114);
-  curveVertex (Leaf2x+31,Leaf2y+103);
-  curveVertex (Leaf2x+31,Leaf2y+103);
+  curveVertex (Leaf2x+1,Leaf2y+133);
+  curveVertex (Leaf2x+1,Leaf2y+133);
+  curveVertex (Leaf2x+8,Leaf2y+114);
+  curveVertex (Leaf2x+26,Leaf2y+103);
+  curveVertex (Leaf2x+26,Leaf2y+103);
   endShape (CLOSE);
 
   //5
@@ -476,36 +476,36 @@ function Draw_Leaf2(){
 
   //6
   beginShape ();
-  curveVertex (Leaf2x+58,Leaf2y+111);
-  curveVertex (Leaf2x+58,Leaf2y+111);
-  curveVertex (Leaf2x+53,Leaf2y+93);
-  curveVertex (Leaf2x+38,Leaf2y+81);
-  curveVertex (Leaf2x+38,Leaf2y+81);
+  curveVertex (Leaf2x+48,Leaf2y+111);
+  curveVertex (Leaf2x+48,Leaf2y+111);
+  curveVertex (Leaf2x+43,Leaf2y+93);
+  curveVertex (Leaf2x+28,Leaf2y+81);
+  curveVertex (Leaf2x+28,Leaf2y+81);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+58,Leaf2y+111);
-  curveVertex (Leaf2x+58,Leaf2y+111);
-  curveVertex (Leaf2x+43,Leaf2y+99);
-  curveVertex (Leaf2x+38,Leaf2y+81);
-  curveVertex (Leaf2x+38,Leaf2y+81);
+  curveVertex (Leaf2x+48,Leaf2y+111);
+  curveVertex (Leaf2x+48,Leaf2y+111);
+  curveVertex (Leaf2x+33,Leaf2y+99);
+  curveVertex (Leaf2x+28,Leaf2y+81);
+  curveVertex (Leaf2x+28,Leaf2y+81);
   endShape (CLOSE);
 
   //7
   beginShape ();
-  curveVertex (Leaf2x+8,Leaf2y+105);
-  curveVertex (Leaf2x+8,Leaf2y+105);
-  curveVertex (Leaf2x+29,Leaf2y+95);
-  curveVertex (Leaf2x+34,Leaf2y+80);
-  curveVertex (Leaf2x+34,Leaf2y+80);
+  curveVertex (Leaf2x-2,Leaf2y+105);
+  curveVertex (Leaf2x-2,Leaf2y+105);
+  curveVertex (Leaf2x+19,Leaf2y+95);
+  curveVertex (Leaf2x+24,Leaf2y+80);
+  curveVertex (Leaf2x+24,Leaf2y+80);
   endShape (CLOSE);
 
   beginShape ();
-  curveVertex (Leaf2x+8,Leaf2y+105);
-  curveVertex (Leaf2x+8,Leaf2y+105);
-  curveVertex (Leaf2x+18,Leaf2y+87);
-  curveVertex (Leaf2x+34,Leaf2y+80);
-  curveVertex (Leaf2x+34,Leaf2y+80);
+  curveVertex (Leaf2x-2,Leaf2y+105);
+  curveVertex (Leaf2x-2,Leaf2y+105);
+  curveVertex (Leaf2x+8,Leaf2y+87);
+  curveVertex (Leaf2x+24,Leaf2y+80);
+  curveVertex (Leaf2x+24,Leaf2y+80);
   endShape (CLOSE);
 
   //Stalk
@@ -515,9 +515,9 @@ function Draw_Leaf2(){
   beginShape ();
   curveVertex (Leaf2x+31,Leaf2y+150);
   curveVertex (Leaf2x+31,Leaf2y+150);
-  curveVertex (Leaf2x+30,Leaf2y+130);
-  curveVertex (Leaf2x+37,Leaf2y+70);
-  curveVertex (Leaf2x+37,Leaf2y+70);
+  curveVertex (Leaf2x+32,Leaf2y+120);
+  curveVertex (Leaf2x+26,Leaf2y+80);
+  curveVertex (Leaf2x+26,Leaf2y+80);
   endShape ();
 
 

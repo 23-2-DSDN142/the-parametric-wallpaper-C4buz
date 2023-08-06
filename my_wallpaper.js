@@ -8,9 +8,9 @@ let Leafx = 8;
 let Leafy = 10;
 let Leaf2x = 135;
 let Leaf2y = -75;
-let LeafOutline = 1;
+let LeafOutline = 0.5;
 let leaf_colour= ("#638a63");
-let leaf_stroke_colour = ("#abd1ab");
+let leaf_stroke_colour = ("#3e573e");
 
 let Butterflyx = 10;
 let Butterflyy = 2;
@@ -24,24 +24,24 @@ let bluex = 0;
 let bluey = 0;
 let blue2x = -65;
 let blue2y = -120;
-let petalsize = 3;
-let middlesize = 3;
-let Tinyflowerstemcolour =("#c9d6cd");
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#638a63");
 let Tinyflowerstem= 1
-let TinyFlowerColour = ("##91baae");
+let TinyFlowerColour = ("#91baae");
 
 let heartx = 0;
 let hearty = -25;
-let heartleaf_colour = ("#91baae");
-let heartleafstrokecolour = ("#c8e6dd");
-let heartleafstroke = (1);
+let heartleaf_colour = ("#b6d4a5");
+let heartleafstrokecolour = ("##dbdbc5");
+let heartleafstroke = (1.5);
 
 
 let background_colour = (38,38,43);
 
 function setup_wallpaper(pWallpaper) {
-pWallpaper.output_mode(DEVELOP_GLYPH);
-pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(A3);
 pWallpaper.show_guide(false); //set this to false when you're ready to print
 
 //Grid settings
@@ -54,18 +54,14 @@ function wallpaper_background() {
 background(background_colour); 
 }
 
-function wallpaper_background() {
-background(background_colour); 
-}
-
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-// Draw_Butterfly();
+Draw_Butterfly();
 Draw_Lilies ();
 Draw_Lilies_Stem ();
-// Draw_Leaf();
-// Draw_Leaf2();
-// DrawTinyFlower ();
-// DrawHeartLeaf ();
+Draw_Leaf();
+Draw_Leaf2();
+DrawTinyFlower ();
+DrawHeartLeaf ();
 }
 function Draw_Lilies () {
 

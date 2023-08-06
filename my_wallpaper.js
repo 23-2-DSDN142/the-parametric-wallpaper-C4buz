@@ -1,4 +1,5 @@
 //your parameter variables go here!
+
 let Lily1x = 15;
 let Lily1y = 5;
 let Lilystemcolour = ("#638a63")
@@ -70,7 +71,6 @@ strokeWeight(0.5)
 stroke (180, 180, 184)
 fill(220, 231, 232)
 
-
 //lily 1
 beginShape ();
 vertex (Lily1x+58,Lily1y+60);
@@ -82,7 +82,6 @@ vertex (Lily1x+78,Lily1y+75);
 vertex (Lily1x+78,Lily1y+60)
 endShape (CLOSE);
 ellipse(Lily1x+68,Lily1y+60,20,15)  
-
 
 //lily 2
 beginShape ();
@@ -169,6 +168,7 @@ endShape (CLOSE);
 ellipse(Lily1x+149,Lily1y+175,20,15)
 
 }
+
 function Draw_Lilies_Stem () { 
 stroke (Lilystemcolour);
 noFill ();
@@ -258,9 +258,8 @@ curveVertex (Lily1x+143,Lily1y+124);
 curveVertex (Lily1x+157,Lily1y+150);
 curveVertex (Lily1x+157,Lily1y+150);
 endShape ();
-
-
 }
+
 function Draw_Leaf (){
 
 fill (leaf_colour);
@@ -398,6 +397,7 @@ curveVertex (Leafx+37,Leafy+70);
 curveVertex (Leafx+37,Leafy+70);
 endShape ();
 }
+
 function Draw_Leaf2(){
 fill (leaf_colour);
 stroke (leaf_stroke_colour)
@@ -534,9 +534,10 @@ curveVertex (Leaf2x+26,Leaf2y+80);
 curveVertex (Leaf2x+26,Leaf2y+80);
 endShape ();
 
-
 }
+
 function DrawTinyFlower (){
+
 //Tiny Flower Lower
 //Branches
 strokeWeight (Tinyflowerstem)
@@ -557,7 +558,6 @@ line (bluex+78,bluey+168.5,bluex+95.5,bluey+180);
 line (bluex+107,bluey+155.5,bluex+95,bluey+170);
 line (bluex+77,bluey+152.5,bluex+92,bluey+160);
 line (bluex+97,bluey+142.5,bluex+90,bluey+151)
-
 
 //1
 fill (TinyFlowerColour);
@@ -635,7 +635,6 @@ ellipse (bluex+86.5,bluey+137.5,petalsize,petalsize);
 ellipse (bluex+83.5,bluey+137.5,petalsize,petalsize);
 fill (255,255,255)
 ellipse(bluex+85,bluey+135.5,middlesize,middlesize);
-
 
 //Tiny Flower Upper
 strokeWeight (Tinyflowerstem)
@@ -734,9 +733,6 @@ ellipse (blue2x+93.5,blue2y+134.5,petalsize,petalsize);
 fill (255,255,255)
 ellipse(blue2x+95,blue2y+132.5,middlesize,middlesize);
 
-
-//background arc =true (if statements (if true) for backdrop stuff)
-
 }
 function Draw_Butterfly(){
 
@@ -784,12 +780,12 @@ curveVertex (Butterflyx+89,Butterflyy+33);
 curveVertex (Butterflyx+89,Butterflyy+33);
 endShape();
 
-
 //antennae
 strokeWeight (1)
 stroke(135, 127, 120);
 line (Butterflyx+88,Butterflyy+35,Butterflyx+86,Butterflyy+30)
 line (Butterflyx+88,Butterflyy+36,Butterflyx+83,Butterflyy+32)
+
 }
 else{
   
@@ -886,8 +882,6 @@ curveVertex (heartx+204,hearty+133);
 curveVertex (heartx+195,hearty+142);
 curveVertex (heartx+205,hearty+142);
 endShape ();
-
-
 
 }
 

@@ -1,49 +1,57 @@
 //your parameter variables go here!
-
-//test
 let Lily1x = 15;
 let Lily1y = 5;
+let Lilystemcolour = ("#638a63")
+let Lilystem = (2)
 
 let Leafx = 8;
 let Leafy = 10;
-
 let Leaf2x = 135;
 let Leaf2y = -75;
-
 let LeafOutline = 1;
+let leaf_colour= ("#638a63");
+let leaf_stroke_colour = ("#abd1ab");
 
 let Butterflyx = 10;
 let Butterflyy = 2;
+let butterfly = true;  
+let butterflywingcolour = ("#91baae");
+let butterflybodycolour = ("#dbdbc5");
+let butterflystroke = 2;
+let butterflystrokecolour = ("#c8e6dd")
 
 let bluex = 0;
 let bluey = 0;
-
 let blue2x = -65;
 let blue2y = -120;
-
-let petalsize = 6;
-let middlesize =3;
+let petalsize = 3;
+let middlesize = 3;
+let Tinyflowerstemcolour =("#c9d6cd");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("##91baae");
 
 let heartx = 0;
 let hearty = -25;
+let heartleaf_colour = ("#91baae");
+let heartleafstrokecolour = ("#c8e6dd");
+let heartleafstroke = (1);
 
-let butterfly = true;  
 
-let background_colour = (38,38,43);
-let leaf_colour= (99,138,99);
-let leaf_stroke_colour = (62,87,62);
-let butterflycolour = ("#a7c7cc");
-let heartleaf_colour = (182,212,165);
+let background_colour = ("#382e26");
 
 function setup_wallpaper(pWallpaper) {
 pWallpaper.output_mode(GRID_WALLPAPER);
-pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.resolution(NINE_PORTRAIT);
 pWallpaper.show_guide(false); //set this to false when you're ready to print
 
 //Grid settings
 pWallpaper.grid_settings.cell_width  = 200;
 pWallpaper.grid_settings.cell_height = 200;
 pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+background(background_colour); 
 }
 
 function wallpaper_background() {
@@ -166,10 +174,9 @@ ellipse(Lily1x+149,Lily1y+175,20,15)
 
 }
 function Draw_Lilies_Stem () { 
-
-stroke (99,138,99);
-noFill (38, 38, 43);
-strokeWeight (1.5)
+stroke (Lilystemcolour);
+noFill ();
+strokeWeight (Lilystem)
   
 beginShape ();
 curveVertex (Lily1x+49,Lily1y+52);
@@ -260,8 +267,8 @@ endShape ();
 }
 function Draw_Leaf (){
 
-fill (99,138,99);
-stroke (62, 87, 62)
+fill (leaf_colour);
+stroke (leaf_stroke_colour)
 strokeWeight (LeafOutline);
 
 //1
@@ -396,8 +403,8 @@ curveVertex (Leafx+37,Leafy+70);
 endShape ();
 }
 function Draw_Leaf2(){
-fill (99,138,99);
-stroke (62, 87, 62)
+fill (leaf_colour);
+stroke (leaf_stroke_colour)
 strokeWeight (LeafOutline);
 
 //1
@@ -534,11 +541,11 @@ endShape ();
 
 }
 function DrawTinyFlower (){
-//Blue Flower Lower
+//Tiny Flower Lower
 //Branches
-strokeWeight (1)
-stroke (99,138,99);
-noFill (38, 38, 43);
+strokeWeight (Tinyflowerstem)
+stroke (Tinyflowerstemcolour);
+noFill ();
 
 beginShape ();
 curveVertex (bluex+85,bluey+135.5);
@@ -557,7 +564,7 @@ line (bluex+97,bluey+142.5,bluex+90,bluey+151)
 
 
 //1
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+80,bluey+185,petalsize,petalsize);
 ellipse (bluex+77.8,bluey+186.7,petalsize,petalsize);
@@ -568,7 +575,7 @@ fill (255,255,255)
 ellipse(bluex+80,bluey+187.5,middlesize,middlesize);
 
 //2
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+112,bluey+172,petalsize,petalsize);
 ellipse (bluex+109.8,bluey+173.7,petalsize,petalsize);
@@ -579,7 +586,7 @@ fill (255,255,255)
 ellipse(bluex+112,bluey+174.5,middlesize,middlesize);
 
 //3
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+78,bluey+166,petalsize,petalsize);
 ellipse (bluex+75.8,bluey+167.7,petalsize,petalsize);
@@ -590,7 +597,7 @@ fill (255,255,255)
 ellipse(bluex+78,bluey+168.5,middlesize,middlesize);
 
 //4
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+107,bluey+153,petalsize,petalsize);
 ellipse (bluex+104.8,bluey+154.7,petalsize,petalsize);
@@ -601,7 +608,7 @@ fill (255,255,255)
 ellipse(bluex+107,bluey+155.5,middlesize,middlesize);
 
 //5
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+77,bluey+150,petalsize,petalsize);
 ellipse (bluex+74.8,bluey+151.7,petalsize,petalsize);
@@ -612,7 +619,7 @@ fill (255,255,255)
 ellipse(bluex+77,bluey+152.5,middlesize,middlesize);
 
 //6
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+97,bluey+140,petalsize,petalsize);
 ellipse (bluex+94.8,bluey+141.7,petalsize,petalsize);
@@ -623,7 +630,7 @@ fill (255,255,255)
 ellipse(bluex+97,bluey+142.5,middlesize,middlesize);
 
 //7
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (bluex+85,bluey+133,petalsize,petalsize);
 ellipse (bluex+82.8,bluey+134.7,petalsize,petalsize);
@@ -634,9 +641,9 @@ fill (255,255,255)
 ellipse(bluex+85,bluey+135.5,middlesize,middlesize);
 
 
-//Blue Flower Upper
-strokeWeight (1)
-stroke (99,138,99);
+//Tiny Flower Upper
+strokeWeight (Tinyflowerstem)
+stroke (Tinyflowerstemcolour);
 noFill (38, 38, 43);
 
 beginShape ();
@@ -655,7 +662,7 @@ line (blue2x+80,blue2y+143.5,blue2x+90,blue2y+160);
 line (blue2x+100,blue2y+147.5,blue2x+91.5,blue2y+151)
 
 //1
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+80,blue2y+180,petalsize,petalsize);
 ellipse (blue2x+77.8,blue2y+181.7,petalsize,petalsize);
@@ -666,7 +673,7 @@ fill (255,255,255)
 ellipse(blue2x+80,blue2y+182.5,middlesize,middlesize);
 
 //2
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+107,blue2y+175,petalsize,petalsize);
 ellipse (blue2x+104.8,blue2y+176.7,petalsize,petalsize);
@@ -677,7 +684,7 @@ fill (255,255,255)
 ellipse(blue2x+107,blue2y+177.5,middlesize,middlesize);
 
 //3
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+78,blue2y+161,petalsize,petalsize);
 ellipse (blue2x+75.8,blue2y+162.7,petalsize,petalsize);
@@ -688,7 +695,7 @@ fill (255,255,255)
 ellipse(blue2x+78,blue2y+163.5,middlesize,middlesize);
 
 //4
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+107,blue2y+158,petalsize,petalsize);
 ellipse (blue2x+104.8,blue2y+159.7,petalsize,petalsize);
@@ -699,7 +706,7 @@ fill (255,255,255)
 ellipse(blue2x+107,blue2y+160.5,middlesize,middlesize);
 
 //5
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+80,blue2y+141,petalsize,petalsize);
 ellipse (blue2x+77.8,blue2y+142.7,petalsize,petalsize);
@@ -710,7 +717,7 @@ fill (255,255,255)
 ellipse(blue2x+80,blue2y+143.5,middlesize,middlesize);
 
 //6
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+100,blue2y+145,petalsize,petalsize);
 ellipse (blue2x+97.8,blue2y+146.7,petalsize,petalsize);
@@ -721,7 +728,7 @@ fill (255,255,255)
 ellipse(blue2x+100,blue2y+147.5,middlesize,middlesize);
 
 //7
-fill (117,162,203);
+fill (TinyFlowerColour);
 strokeWeight (0);
 ellipse (blue2x+95,blue2y+130,petalsize,petalsize);
 ellipse (blue2x+92.8,blue2y+131.7,petalsize,petalsize);
@@ -738,11 +745,11 @@ ellipse(blue2x+95,blue2y+132.5,middlesize,middlesize);
 function Draw_Butterfly(){
 
 if (butterfly == true){
-stroke (17, 36, 46)
-strokeWeight (0.5);
+stroke (butterflystrokecolour)
+strokeWeight (butterflystroke);
 
 //TopWing
-fill (butterflycolour);
+fill (butterflywingcolour);
 
 beginShape ();
 curveVertex (Butterflyx+90,Butterflyy+35);
@@ -755,7 +762,7 @@ curveVertex (Butterflyx+100,Butterflyy+40);
 endShape();
 
 //LowerWing
-fill (butterflycolour);
+fill (butterflywingcolour);
 
 beginShape ();
 curveVertex (Butterflyx+92,Butterflyy+36);
@@ -767,9 +774,9 @@ curveVertex (Butterflyx+95,Butterflyy+40);
 endShape();
 
 //body
-fill(194, 180, 153);
-stroke (48, 35, 11)
-strokeWeight (0);
+fill(butterflybodycolour);
+strokeWeight (1)
+stroke(135, 127, 120);
 
 beginShape ();
 curveVertex (Butterflyx+88,Butterflyy+33);
@@ -794,12 +801,11 @@ else{
 }
 function DrawHeartLeaf (){
 
-strokeWeight (1.5)
-stroke(92, 125, 74)
+strokeWeight (heartleafstroke)
+stroke(heartleafstrokecolour)
+fill (heartleaf_colour)
 
 line (heartx+194.6,hearty+197,heartx+194.6,hearty+137)
-
-fill (182, 212, 165)
 
 //1
 beginShape ();

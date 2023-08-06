@@ -3,41 +3,100 @@
 Wallpaper 1:
 let Lily1x = 15;
 let Lily1y = 5;
+let Lilystemcolour = ("#638a63")
+let Lilystem = (1.5)
 
 let Leafx = 8;
 let Leafy = 10;
-
 let Leaf2x = 135;
 let Leaf2y = -75;
-
 let LeafOutline = 1;
+let leaf_colour= ("#638a63");
+let leaf_stroke_colour = ("#3e573e");
 
 let Butterflyx = 10;
 let Butterflyy = 2;
+let butterfly = true;  
+let butterflywingcolour = ("#a7c7cc");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 0.5;
+let butterflystrokecolour = ("#11242e")
 
 let bluex = 0;
 let bluey = 0;
-
 let blue2x = -65;
 let blue2y = -120;
-
-let petalsize = 3;
-let middlesize =2;
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#638a63");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#75a2cb");
 
 let heartx = 0;
 let hearty = -25;
+let heartleaf_colour = ("#b6d4a5");
+let heartleafstrokecolour = ("#5c7d4a");
+let heartleafstroke = (1.5);
 
-let butterfly = true;  
 
 let background_colour = (38,38,43);
-let leaf_colour= (99,138,99);
-let leaf_stroke_colour = (62,87,62)
-let butterflycolour = ("#a7c7cc");
-let heartleaf_colour = (182,212,165);
 
 function setup_wallpaper(pWallpaper) {
 pWallpaper.output_mode(GRID_WALLPAPER);
-pWallpaper.resolution(NINE_LANDSCAPE);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+////////////////////////////////////////////////
+
+Wallpaper 2:
+
+let Lily1x = 20;
+let Lily1y = 5;
+let Lilystemcolour = ("#638a63")
+let Lilystem = (1.5)
+
+let Leafx = 8;
+let Leafy = 10;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 1;
+let leaf_colour= ("#72ab72");
+let leaf_stroke_colour = ("#3e573e");
+
+let Butterflyx = 10;
+let Butterflyy = 2;
+let butterfly = false;  
+let butterflywingcolour = ("#a7c7cc");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 0.5;
+let butterflystrokecolour = ("#11242e")
+
+let bluex = 0;
+let bluey = 0;
+let blue2x = -70;
+let blue2y = -120;
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#638a63");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#dec885");
+
+let heartx = 5;
+let hearty = -10;
+let heartleaf_colour = ("#b6d4a5");
+let heartleafstrokecolour = ("#5c7d4a");
+let heartleafstroke = (1.5);
+
+let background_colour = ("#374652");
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
 pWallpaper.show_guide(false); //set this to false when you're ready to print
 
 //Grid settings
@@ -46,7 +105,282 @@ pWallpaper.grid_settings.cell_height = 200;
 pWallpaper.grid_settings.row_offset  = 50;
 }
 
+
 ////////////////////////////////////////////////
 
-Wallpaper 2:
+Wallpaper 3:
 
+let Lily1x = -7;
+let Lily1y = 5;
+let Lilystemcolour = ("#638a63")
+let Lilystem = (1.5)
+
+let Leafx = -10;
+let Leafy = 20;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 1;
+let leaf_colour= ("#638a63");
+let leaf_stroke_colour = ("#3e573e");
+
+let Butterflyx = 75;
+let Butterflyy = 120;
+let butterfly = true;  
+let butterflywingcolour = ("#d0b8d9");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 0.5;
+let butterflystrokecolour = ("#11242e")
+
+let bluex = -15;
+let bluey = 0;
+let blue2x = 21;
+let blue2y = -120;
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#638a63");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#a48bad");
+
+let heartx = -175;
+let hearty = -120;
+let heartleaf_colour = ("#b6d4a5");
+let heartleafstrokecolour = ("#5c7d4a");
+let heartleafstroke = (1.5);
+
+let background_colour = (38,38,43);
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}  
+
+//////////////////////////////////////////////////
+
+Wallpaper 4: 
+
+let Lily1x = 15;
+let Lily1y = 5;
+let Lilystemcolour = ("#305947")
+let Lilystem = (1.5)
+
+let Leafx = 8;
+let Leafy = 10;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 1;
+let leaf_colour= ("#599475");
+let leaf_stroke_colour = ("#305947");
+
+let Butterflyx = 10;
+let Butterflyy = 2;
+let butterfly = true;  
+let butterflywingcolour = ("#a7c7cc");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 1;
+let butterflystrokecolour = ("#3c6654")
+
+let bluex = 0;
+let bluey = 0;
+let blue2x = -65;
+let blue2y = -120;
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#3c6654");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#75a2cb");
+
+let heartx = 0;
+let hearty = -25;
+let heartleaf_colour = ("#599475");
+let heartleafstrokecolour = ("#387556");
+let heartleafstroke = (1.5)
+
+let background_colour = ("#18423d");
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+
+////////////////////////////////////
+
+Wallpaper 5:
+let Lily1x = 15;
+let Lily1y = 5;
+let Lilystemcolour = ("#305947")
+let Lilystem = (1.5)
+
+let Leafx = 8;
+let Leafy = 10;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 1;
+let leaf_colour= ("#599475");
+let leaf_stroke_colour = ("#305947");
+
+let Butterflyx = 10;
+let Butterflyy = 2;
+let butterfly = true;  
+let butterflywingcolour = ("#d4cda9");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 1;
+let butterflystrokecolour = ("#7d634b")
+
+let bluex = 0;
+let bluey = 0;
+let blue2x = -65;
+let blue2y = -120;
+let petalsize = 4;
+let middlesize =3;
+let Tinyflowerstemcolour =("#3c6654");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#bab180");
+
+let heartx = 0;
+let hearty = -25;
+let heartleaf_colour = ("#d4cda9");
+let heartleafstrokecolour = ("#387556");
+let heartleafstroke = (1.5)
+
+let background_colour = ("#1e2530");
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+
+//////////////////////////////////////////////////
+
+Wallpaper 6:
+
+let Lily1x = -45;
+let Lily1y = -20;
+let Lilystemcolour = ("#305947")
+let Lilystem = (2)
+
+let Leafx = -5;
+let Leafy = 20;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 1.5;
+let leaf_colour= ("#599475");
+let leaf_stroke_colour = ("#305947");
+
+let Butterflyx = -20;
+let Butterflyy = 4;
+let butterfly = true;  
+let butterflywingcolour = ("#d4cda9");
+let butterflybodycolour = ("#c2b499");
+let butterflystroke = 1;
+let butterflystrokecolour = ("#7d634b")
+
+let bluex = 20;
+let bluey = -100;
+let blue2x = 55;
+let blue2y = 5;
+let petalsize = 4;
+let middlesize =3;
+let Tinyflowerstemcolour =("#3c6654");
+let Tinyflowerstem= 2
+let TinyFlowerColour = ("#305947");
+
+let heartx = -14;
+let hearty = -20;
+let heartleaf_colour = ("#d4cda9");
+let heartleafstrokecolour = ("#305947");
+let heartleafstroke = (1.5)
+
+let background_colour = ("#7bab91");
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+
+////////////////////////////////////////////////////
+
+Wallpaper 7:
+
+let Lily1x = 15;
+let Lily1y = 5;
+let Lilystemcolour = ("#638a63")
+let Lilystem = (2)
+
+let Leafx = 8;
+let Leafy = 10;
+let Leaf2x = 135;
+let Leaf2y = -75;
+let LeafOutline = 0.5;
+let leaf_colour= ("#638a63");
+let leaf_stroke_colour = ("#3e573e");
+
+let Butterflyx = 10;
+let Butterflyy = 2;
+let butterfly = true;  
+let butterflywingcolour = ("#91baae");
+let butterflybodycolour = ("#dbdbc5");
+let butterflystroke = 2;
+let butterflystrokecolour = ("#c8e6dd")
+
+let bluex = 0;
+let bluey = 0;
+let blue2x = -65;
+let blue2y = -120;
+let petalsize = 6;
+let middlesize =3;
+let Tinyflowerstemcolour =("#638a63");
+let Tinyflowerstem= 1
+let TinyFlowerColour = ("#91baae");
+
+let heartx = 0;
+let hearty = -25;
+let heartleaf_colour = ("#b6d4a5");
+let heartleafstrokecolour = ("##dbdbc5");
+let heartleafstroke = (1.5);
+
+
+let background_colour = (38,38,43);
+
+function setup_wallpaper(pWallpaper) {
+pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.resolution(NINE_PORTRAIT);
+pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+//Grid settings
+pWallpaper.grid_settings.cell_width  = 200;
+pWallpaper.grid_settings.cell_height = 200;
+pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+background(background_colour); 
+}
+
+//////////////////////////////////////////
+
+
+Wallpaper 8:

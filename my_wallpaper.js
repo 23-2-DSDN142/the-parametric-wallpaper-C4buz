@@ -37,10 +37,10 @@ let heartleafstrokecolour = ("#c8e6dd");
 let heartleafstroke = (1);
 
 
-let background_colour = ("#382e26");
+let background_colour = (38,38,43);
 
 function setup_wallpaper(pWallpaper) {
-pWallpaper.output_mode(GRID_WALLPAPER);
+pWallpaper.output_mode(DEVELOP_GLYPH);
 pWallpaper.resolution(NINE_PORTRAIT);
 pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -59,13 +59,13 @@ background(background_colour);
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-Draw_Butterfly();
+// Draw_Butterfly();
 Draw_Lilies ();
 Draw_Lilies_Stem ();
-Draw_Leaf();
-Draw_Leaf2();
-DrawTinyFlower ();
-DrawHeartLeaf ();
+// Draw_Leaf();
+// Draw_Leaf2();
+// DrawTinyFlower ();
+// DrawHeartLeaf ();
 }
 function Draw_Lilies () {
 
